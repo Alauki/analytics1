@@ -41,3 +41,4 @@ summary(logit2)
 
 
 
+
