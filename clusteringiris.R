@@ -60,3 +60,4 @@ det(as.matrix(mtcars))
 ?na.action
 km3=kmeans(data,centers=3)
 km3$tot.withinss
+#kmeans best used for large clusters
