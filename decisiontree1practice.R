@@ -32,7 +32,7 @@ ctree2b = prune(ctree, cp=.0010101)
 ctree2b
 rpart.plot(ctree2b)
 
-ndata1 = data.frame(gender=c('Female','Male'), age=c(25,30), course=c('BBA','MBA'), married=c('Single','Married'))
+(ndata1 = data.frame(gender=c('Female','Male'), age=c(25,30), course=c('BBA','MBA'), married=c('Single','Married')))
 (p1=predict(ctree, newdata=ndata1, type='class'))
 (p2=predict(ctree, newdata=ndata1, type='prob'))
 cbind(ndata1, p1,p2)
