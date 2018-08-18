@@ -37,6 +37,8 @@ itemFrequencyPlot(tdata,topN = 5,type="relative", horiz=T)
 rules = apriori(tdata, parameter = list(supp = 0.1, conf = 0.6, minlen=2))
 itemFrequencyPlot(items(rules))
 
+inspect(rules[1:5])
+inspect(head(rules))
 inspect(rules)
 
 #sort rules by support
@@ -96,3 +98,4 @@ write.csv(rules_DF, './data/myrules1.csv')
 
 #Visualisation
 plot(rules)
+
